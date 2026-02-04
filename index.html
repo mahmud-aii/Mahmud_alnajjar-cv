@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mahmud Alnajjar - Professional CV | Sales & Marketing Specialist | متخصص مبيعات وتسويق">
-    <meta name="keywords" content="CV, Resume, Sales, Marketing, Mahmud Alnajjar, السيرة الذاتية">
-    <meta name="author" content="Mahmud Alnajjar">
-    <meta name="theme-color" content="#0f172a">
-    
+    <meta name="description" content="Professional CV of Mahmud Alnajjar - Sales & Marketing Specialist">
     <title>Mahmud Alnajjar | Sales & Marketing Specialist</title>
     
-    <!-- Google Fonts: Poppins (EN) & Cairo (AR) -->
+    <!-- Google Fonts: Cairo (Arabic) & Poppins (Latin) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">M.A.</a>
             <div class="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="#about" data-i18n="nav_about">About</a></li>
-                    <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
-                    <li><a href="#education-skills" data-i18n="nav_skills">Skills</a></li>
-                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button onclick="setLanguage('en')" class="lang-btn active" aria-label="Switch to English" title="English">EN</button>
-                    <button onclick="setLanguage('ar')" class="lang-btn" aria-label="Switch to Arabic" title="العربية">AR</button>
-                    <button onclick="setLanguage('tr')" class="lang-btn" aria-label="Switch to Turkish" title="Türkçe">TR</button>
+                    <button onclick="setLanguage('ar')" class="lang-btn active" aria-label="Switch to Arabic">AR</button>
+                    <button onclick="setLanguage('en')" class="lang-btn" aria-label="Switch to English">EN</button>
+                    <button onclick="setLanguage('tr')" class="lang-btn" aria-label="Switch to Turkish">TR</button>
                 </div>
             </div>
             <button class="hamburger" aria-label="Toggle menu">
@@ -48,15 +44,15 @@
     <header class="hero" id="about">
         <div class="container hero-container">
             <div class="hero-text">
-                <p class="greeting" data-i18n="hero_greeting">Hello, I am</p>
-                <h1 class="name" data-i18n="name">Mahmud Alnajjar</h1>
-                <h2 class="role" data-i18n="role">Sales & Marketing Specialist</h2>
-                <p class="bio" data-i18n="hero_bio">
+                <p class="greeting">Hello, I am</p>
+                <h1 class="name">Mahmud Alnajjar</h1>
+                <h2 class="role">Sales & Marketing Specialist</h2>
+                <p class="bio">
                     Specialized in strategic sales planning, CRM management, and brand growth across Turkey and Saudi Arabia.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">Contact Me</a>
-                    <a href="mailto:mahmud.elnecar@gmail.com" class="btn btn-outline" data-i18n="btn_email">Email Me</a>
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="mailto:mahmud.elnecar@gmail.com" class="btn btn-outline">Email Me</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -69,7 +65,7 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title" data-i18n="nav_exp">Work Experience</h2>
+            <h2 class="section-title">Work Experience</h2>
             <div class="timeline" id="experience-list">
                 <!-- Content injected via JS -->
             </div>
@@ -77,9 +73,9 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education-skills" class="section bg-light">
+    <section id="education" class="section bg-light">
         <div class="container">
-            <h2 class="section-title" data-i18n="education_title">Education</h2>
+            <h2 class="section-title">Education</h2>
             <div class="grid-container" id="education-list">
                 <!-- Content injected via JS -->
             </div>
@@ -89,14 +85,14 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title" data-i18n="nav_skills">Skills & Languages</h2>
+            <h2 class="section-title">Skills & Languages</h2>
             <div class="skills-wrapper">
                 <div class="skills-category">
-                    <h3 data-i18n="skills_tech">Technical & Soft Skills</h3>
+                    <h3>Technical & Soft Skills</h3>
                     <div class="tags" id="skills-list"></div>
                 </div>
                 <div class="skills-category">
-                    <h3 data-i18n="skills_lang">Languages</h3>
+                    <h3>Languages</h3>
                     <div class="tags" id="languages-list"></div>
                 </div>
             </div>
@@ -106,7 +102,7 @@
     <!-- Contact Section -->
     <section id="contact" class="section bg-dark">
         <div class="container contact-container">
-            <h2 class="section-title text-light" data-i18n="nav_contact">Get In Touch</h2>
+            <h2 class="section-title text-light">Get In Touch</h2>
             <div class="contact-cards">
                 <div class="card">
                     <span class="icon">📞</span>
@@ -118,7 +114,7 @@
                 </div>
                 <div class="card">
                     <span class="icon">📍</span>
-                    <p data-i18n="location">Istanbul, Turkey</p>
+                    <p>Istanbul, Turkey</p>
                 </div>
             </div>
         </div>
@@ -128,7 +124,7 @@
         <p>&copy; 2026 Mahmud Alnajjar. All rights reserved.</p>
     </footer>
 
-    <script src="js/translations.js"></script>
-    <script src="js/script.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
