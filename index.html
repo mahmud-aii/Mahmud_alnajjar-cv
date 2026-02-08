@@ -6,7 +6,7 @@
     <meta name="description" content="Professional CV of Mahmud Alnajjar - Sales & Marketing Specialist">
     <title>Mahmud Alnajjar | Sales & Marketing Specialist</title>
     
-    <!-- Google Fonts: Cairo (Arabic) & Poppins (Latin) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -21,18 +21,18 @@
             <a href="#" class="logo">M.A.</a>
             <div class="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+                    <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button onclick="setLanguage('ar')" class="lang-btn active" aria-label="Switch to Arabic">AR</button>
-                    <button onclick="setLanguage('en')" class="lang-btn" aria-label="Switch to English">EN</button>
-                    <button onclick="setLanguage('tr')" class="lang-btn" aria-label="Switch to Turkish">TR</button>
+                    <button onclick="setLanguage('ar')" class="lang-btn active">AR</button>
+                    <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+                    <button onclick="setLanguage('tr')" class="lang-btn">TR</button>
                 </div>
             </div>
-            <button class="hamburger" aria-label="Toggle menu">
+            <button class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -44,19 +44,22 @@
     <header class="hero" id="about">
         <div class="container hero-container">
             <div class="hero-text">
-                <p class="greeting">Hello, I am</p>
-                <h1 class="name">Mahmud Alnajjar</h1>
-                <h2 class="role">Sales & Marketing Specialist</h2>
-                <p class="bio">
+                <p class="greeting" data-i18n="hero_greeting">Hello, I am</p>
+                <h1 class="name" data-i18n="name">Mahmud Alnajjar</h1>
+                <h2 class="role" data-i18n="role">Sales & Marketing Specialist</h2>
+                <p class="bio" data-i18n="hero_bio">
                     Specialized in strategic sales planning, CRM management, and brand growth across Turkey and Saudi Arabia.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="mailto:mahmud.elnecar@gmail.com" class="btn btn-outline">Email Me</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">Contact Me</a>
+                    <a href="mailto:mahmud.elnecar@gmail.com" class="btn btn-outline" data-i18n="btn_email">Email Me</a>
+                    <a href="https://wa.me/905538615818" class="btn btn-whatsapp" data-i18n="btn_whatsapp" target="_blank">
+                        <span class="whatsapp-icon">💬</span> WhatsApp
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://lh3.googleusercontent.com/d/14OwJMJK7FJQ02EHFW_NKOhW6a4LXEGH5" alt="Mahmud Alnajjar" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/d/14OwJMJK7FJQ02EHFW_NKOhW6a4LXEGH5" alt="Mahmud Alnajjar Professional Photo" loading="lazy">
                 <div class="blob-bg"></div>
             </div>
         </div>
@@ -65,7 +68,7 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
+            <h2 class="section-title" data-i18n="nav_exp">Work Experience</h2>
             <div class="timeline" id="experience-list">
                 <!-- Content injected via JS -->
             </div>
@@ -75,7 +78,7 @@
     <!-- Education Section -->
     <section id="education" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-i18n="education_title">Education</h2>
             <div class="grid-container" id="education-list">
                 <!-- Content injected via JS -->
             </div>
@@ -85,14 +88,14 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Languages</h2>
+            <h2 class="section-title" data-i18n="nav_skills">Skills & Languages</h2>
             <div class="skills-wrapper">
                 <div class="skills-category">
-                    <h3>Technical & Soft Skills</h3>
+                    <h3 data-i18n="skills_tech">Technical & Soft Skills</h3>
                     <div class="tags" id="skills-list"></div>
                 </div>
                 <div class="skills-category">
-                    <h3>Languages</h3>
+                    <h3 data-i18n="skills_lang">Languages</h3>
                     <div class="tags" id="languages-list"></div>
                 </div>
             </div>
@@ -102,23 +105,34 @@
     <!-- Contact Section -->
     <section id="contact" class="section bg-dark">
         <div class="container contact-container">
-            <h2 class="section-title text-light">Get In Touch</h2>
+            <h2 class="section-title text-light" data-i18n="contact_title">Get In Touch</h2>
             <div class="contact-cards">
                 <div class="card">
                     <span class="icon">📞</span>
-                    <p>+90 553 861 58 18</p>
+                    <p class="phone-number"><bdi>+90 553 861 58 18</bdi></p>
                 </div>
                 <div class="card">
                     <span class="icon">📧</span>
                     <p>mahmud.elnecar@gmail.com</p>
                 </div>
                 <div class="card">
+                    <span class="icon">💬</span>
+                    <a href="https://wa.me/905538615818" target="_blank" class="whatsapp-link" data-i18n="contact_whatsapp">WhatsApp Me</a>
+                </div>
+                <div class="card">
                     <span class="icon">📍</span>
-                    <p>Istanbul, Turkey</p>
+                    <p data-i18n="location">Istanbul, Turkey</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/905538615818" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.325 0-2.651-.402-3.798-1.162l-.273-.16-.283.036C6.335 5.27 5.486 5.555 4.77 6.075c-1.327 1.001-2.087 2.529-2.087 4.159 0 1.546.547 3.011 1.544 4.203l.096.12-.38.617c-.42.686-.745 1.217-.745 1.217.141-.043 1.13-.36 1.779-.74l.129-.08.136.055c1.308.531 2.771.832 4.288.832 3.589 0 6.487-2.898 6.487-6.487 0-1.735-.694-3.363-1.955-4.585-1.261-1.222-2.938-1.895-4.72-1.895z"/>
+        </svg>
+    </a>
 
     <footer>
         <p>&copy; 2026 Mahmud Alnajjar. All rights reserved.</p>
